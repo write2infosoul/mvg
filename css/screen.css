@@ -1,1 +1,1100 @@
+/* CSS Document by sladek*logiq.cz */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear {
+	display: block;
+	clear: both;
+	height: 1px;
+	width: 100%;
+	overflow: hidden;
+}
+*:focus {
+    outline: none;
+   }
 
+
+
+@font-face {
+    font-family: steiner;
+    src: url("bc-steiner-bold.otf");
+}
+@font-face {
+    font-family: 'metric-bold';
+    src: url("metric-bold.otf");
+}
+@font-face {
+    font-family: 'metric-light';
+    src: url("metric-light.otf");
+}
+
+
+
+/* BASIC STYLING */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background-color: #fff;
+	color: #000;
+	font-family: 'Lyon Display Web', serif;
+}
+strong {
+	font-family: 'Lyon Display Web', serif;
+}
+
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none
+}
+p a {
+	color: #BF883B;
+}
+
+
+
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+.header0 {
+	width: 95%;
+	max-width: 950px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fff;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/menucorner1.png);   /*url(../img/menucorner1.png)*/
+}
+.header1 {
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/menucorner1.png);
+	padding: 10px 25px;
+}
+.logo {
+	float: left;
+	width: 200px;
+	height: 70px;
+	margin: 0 0 0 10px;
+}
+.logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 50% 45%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/sweet.svg); /*url(../img/sweet.svg);*/
+}
+.logo span {
+	display: none;
+}
+a.menubutt {
+	display: none;
+}
+.menu {
+	float: right;
+	width: 640px;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 15px 0 0 0;
+	display: block;
+}
+.menu li {
+	display: inline-block;
+	padding: 0 12px;
+}
+.menu li.menuwith {
+	padding: 0 34px 0 10px;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/menuwith.png);
+}
+.menu li a {
+	text-decoration: none;
+	display: block;
+	padding: 5px 0 5px 0;
+	border-bottom: 2px solid #fff;
+}
+.menu li a:hover, .menu li a.menus {
+	color: #BF883B;
+	border-bottom: 2px solid #BF883B;
+}
+a.search {
+	float: right;
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/search.png);
+	margin: 20px 0 0 0;
+}
+
+
+
+
+.intro {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+.intro img {
+	display: block;
+	width: 100%;
+}
+a.scrolldown {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin: -40px 0 0 -40px;
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-position: 50% 50%;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/scrolldown.png);
+	z-index: 90;
+}
+
+
+
+.txt {
+	position: relative;
+	padding: 35px 35px;
+	background-color: #fff;
+	width: 95%;
+	max-width: 880px;
+	min-height: 100px;
+	overflow: hidden;
+	margin: 0 auto 20px auto;
+	z-index: 100;
+}
+.txtcontent {
+	position: relative;
+	z-index: 1;
+}
+.txt-corner1 {
+	display: block;
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/txtcorner1.png);
+}
+.txt-corner2 {
+	display: block;
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/txtcorner2.png);
+}
+.txt-corner3 {
+	display: block;
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/txtcorner3.png);
+}
+.txt-corner4 {
+	display: block;
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/txtcorner4.png);
+}
+.content {
+	padding: 120px 0 0 0;
+	width: 100%;
+	overflow: hidden;
+}
+.content150 {
+	height: 150px;
+}
+.content50 {
+	height: 50px;
+}
+
+.category li {
+	float: left;
+	width: 30%;
+	padding: 0 1.5% 0 1.5%;
+	position: relative;
+	text-align: center;
+}
+.category li img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.category li strong {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 0 5px 0;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 2px solid #fff;
+  -webkit-transition: 150ms ease-out;
+  transition: 150ms ease-out;
+}
+.category li:hover strong {
+	color: #BF883B;
+	border-bottom: 2px solid #BF883B;
+}
+
+
+
+.production li {
+	float: left;
+	width: 22%;
+	padding: 0 1.5% 0;
+	position: relative;
+	text-align: center;
+	font-family: 'Lyon Display Web Light';
+  font-weight:  300;
+  font-stretch: normal;
+}
+.production li img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.production li strong {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 0 5px 0;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 2px solid #fff;
+  -webkit-transition: 150ms ease-out;
+  transition: 150ms ease-out;
+}
+.production li:hover strong {
+	color: #BF883B;
+	border-bottom: 2px solid #BF883B;
+}
+
+
+
+.contact1 {
+	float: left;
+	width: 50%;
+	position: relative;
+  	font-family: 'Lyon Display Web Light';
+  font-weight:  300;
+  font-stretch: normal;
+}
+
+.contact2 {
+	float: right;
+	width: 50%;
+	position: relative;
+}
+.contact1 h2 , .contact2 h2, .txt h2 {
+	color: #BF883B;
+	font-size: 20px;
+	padding: 0 0 15px 0;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+.txt h3 {
+	font-size: 38px;
+	font-family: 'Lyon Display Web LightItalic';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+	padding: 0 0 40px 0;
+	line-height: 45px;
+}
+
+.contact1 p {
+	/*font-size: 18px;
+	line-height: 32px;*/
+  font-size: 15px;
+line-height: 25px;
+	padding: 0 0 25px 0;
+}
+.contact1 p:last-child {
+	padding: 0 0 0 0;
+}
+.soc a {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 0 5px 0 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+a.soc-fb {
+	background-image:url(http://localhost/MVG_Web/img/soc-fb.png);
+}
+a.soc-ins {
+	background-image: url(http://localhost/MVG_Web/img/soc-ins.png);
+}
+.inputmidi, .inputmaxi {
+	display: block;
+	margin: 0 0 25px 0;
+	border: none;
+	background-color: #ececec;
+	font-family: 'Lyon Display Web LightItalic';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+	font-size: 16px;
+	line-height: 26px;
+	width: 94%;
+	padding: 10px 3%;
+	border: none;
+}
+.inputmaxi {
+	height: 165px;
+}
+.inputsubmit {
+	border: none;
+	background-color: transparent;
+	color: #BF883B;
+	font-size: 20px;
+	padding: 0;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	cursor: pointer;
+}
+.inputsubmit:hover {
+	color: #000;
+}
+
+
+
+.products {
+	width: 95%;
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.products1 {
+	float: left;
+	width: 75%;
+}
+.products1 ul li {
+	float: left;
+	width: 31.333%;
+	padding: 0 1% 20px 1%;
+	position: relative;
+}
+.new {
+	display: block;
+	width: 51px;
+	height: 51px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/new.png);
+}
+.products1 a {
+	display: block;
+	position: relative;
+}
+.products1 img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.products2 {
+	float: right;
+	width: 24%;
+	position: relative;
+}
+
+.products21 {
+	font-family: 'Lyon Display Web LightItalic';
+  font-weight:  300;
+  /*font-style:   italic; */
+  font-stretch: normal;
+	font-size: 33px;
+	line-height: 40px;
+	color: #BF883B;
+	padding: 25px;
+	margin: 0 0 20px 0;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image:url(http://localhost/MVG_Web/img/txtcorner4.png);
+}
+.products21 strong {
+f	ont-family: 'Lyon Display Web MediumItalic';
+	font-weight: normal;
+}
+
+.products22 {
+	font-family: 'Lyon Display Web';
+	font-size: 17px;
+	line-height: 38px;
+	padding: 25px;
+	margin: 0 0 20px 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/txtcorner1.png);
+}
+.products22 a {
+	display: inline-block;
+	padding: 0 0 2px 0;
+}
+.products22 a:hover {
+	color: #BF883B;
+	border-bottom: 2px solid #BF883B;
+	padding: 0 0 0 0;
+}
+a.products22s {
+	color: #BF883B;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	border-bottom: 2px solid #BF883B;
+}
+.login .inputmidi {
+	margin: 0 0 15px 0;
+}
+.login .inputsubmit {
+	color: #000;
+}
+.products22 h2 {
+	color: #BF883B;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	font-size: 30px;
+	padding: 0 0 15px 0;
+}
+a.products23 {
+	display: block;
+	padding: 25px;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/txtcorner4.png);
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	font-size: 33px;
+	line-height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+a.products23:hover {
+	color: #BF883B;
+}
+
+
+.pdetail, .pcontent {
+	width: 99%;
+	padding: 30px 0;
+	position: relative;
+	clear: both;
+	display: none;
+}
+a.pdetailclose {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetailclose.png);
+}
+.pdetail1 {
+	float: left;
+	width: 65.666%;
+	padding: 0 0 0 0;
+	position: relative;
+}
+.pdetail1 img {
+	top: auto;
+	bottom: 5px;
+	display: block;
+	position: absolute;
+	margin: auto 0 0 0;
+	display: none;
+}
+.pdetail2 {
+	float: right;
+	width: 31.333%;
+	padding: 0 1% 20px 0;
+}
+.pdetail2 h1 {
+	font-size: 20px;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+.pdetail2 h2 {
+	font-size: 18px;
+	font-family: 'Lyon Display Web Light';
+  font-weight:  300;
+  font-stretch: normal;
+	padding: 0 0 20px 0;
+}
+.pdetail2 p {
+	font-size: 16px;
+	font-family: 'Lyon Display Web Light';
+  font-weight:  300;
+  font-stretch: normal;
+	padding: 0 0 30px 0;
+	color: #BF883B;
+}
+.pdetail20 {
+	min-height: 118px;
+}
+.pdetail21 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail21.png);
+	font-size: 15px;
+	color: #BF883B;
+	padding: 15px 0 15px 85px;
+}
+.pdetail22 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail22.png);
+	font-size: 15px;
+	color: #BF883B;
+	padding: 15px 0 15px 85px;
+}
+.pdetail23 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail23.png);
+	font-size: 15px;
+	color: #BF883B;
+	padding: 15px 0 15px 85px;
+}
+.pdetail24 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail24.png);
+	font-size: 15px;
+	color: #BF883B;
+	padding: 15px 0 15px 85px;
+}
+.pdetail25 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail25.png);
+	font-size: 15px;
+	color: #BF883B;
+	padding: 15px 0 15px 85px;
+}
+.pdetail3 {
+	clear: both;
+	border-top: 1px solid #BF883B;
+	border-bottom: 1px solid #BF883B;
+	padding: 20px 0;
+	text-align: right;
+	vertical-align: middle;
+}
+.pdetail31 {
+	float: left;
+	font-size: 30px;
+	line-height: 55px;
+	color: #BF883B;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	vertical-align: middle;
+}
+a.pdetail32 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail32.png);
+	padding: 10px 40px 10px 50px;
+	font-size: 15px;
+	color: #BF883B;
+	display: inline-block;
+	vertical-align: middle;
+}
+a.pdetail33 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail33.png);
+	padding: 10px 40px 10px 50px;
+	font-size: 15px;
+	color: #BF883B;
+	display: inline-block;
+	vertical-align: middle;
+}
+a.pdetail34 {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/pdetail34.png);
+	padding: 10px 40px 10px 70px;
+	font-size: 15px;
+	color: #BF883B;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+a.pdetail32:hover, a.pdetail33:hover, a.pdetail34:hover {
+	color: #000;
+}
+
+
+
+
+.halfs {
+	position: relative;
+	margin: 0 auto 20px auto;
+	width: 95%;
+	max-width: 950px;
+	font-family: 'Lyon Display Web Light';
+  font-weight:  300;
+  font-stretch: normal;
+}
+.halfs img {
+	max-width: 100%;
+}
+.half1 {
+	float: left;
+	width: 50%;
+	position: relative;
+	overflow: hidden;
+	min-height: 10px;
+}
+.half2 {
+	float: left;
+	width: 40%;
+	padding: 30px 5%;
+	position: relative;
+}
+.half3 {
+	float: right;
+	width: 50%;
+	position: relative;
+	overflow: hidden;
+	min-height: 10px;
+}
+.half4 {
+	float: left;
+	width: 40%;
+	padding: 30px 5%;
+	position: relative;
+}
+
+.half1 img, .half3 img {
+	display: block;
+	width: auto;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: relative;
+	object-fit: contain;
+}
+
+.halfs h2 {
+	font-size: 20px;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	color: #BF883B;
+}
+.halfs h3 {
+	font-size: 38px;
+	font-family: 'Lyon Display Web LightItalic';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+	padding: 0 0 40px 0;
+	line-height: 45px;
+}
+.bdata {
+	float: left;
+	width: 46%;
+	padding: 0 2% 70px 2%;
+	text-align: center;
+}
+.bdata h2 {
+	font-size: 45px;
+	line-height: 54px;
+	font-family: 'Lyon Display Web Light';
+  font-weight:  300;
+  font-stretch: normal;
+}
+.bdata h2 strong {
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+a.amap {
+	display: inline-block;
+	padding: 0 20px 0 0;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/map.png);
+}
+
+
+.kariera h2, .kariera h3, .kariera p {
+	padding: 0 0 20px 0;
+}
+.kariera p {
+     font-family: 'Lyon Display Web Light';
+}
+.karierareal {
+	padding: 0 0 20px 0;
+	position: relative;
+}
+a.karierabutt {
+	border-bottom: 2px solid #BF883B;
+	font-size: 38px;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	padding: 0 0 0 0;
+	color: #BF883B;
+
+}
+a.karierarealclose {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 8px 50px 8px 0;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/karierarealclose.png);
+	color: #BF883B;
+	font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+	font-size: 20px;
+}
+.karierarealtxt {
+	padding: 20px 0 0 0;
+	display: none;
+}
+
+
+.dorties {
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 950px;
+	box-sizing: border-box;
+    font-family: 'Lyon Display Web Light';
+    font-weight: 300;
+    font-stretch: normal;
+	padding: 110px 35px 110px 35px;
+	display: none;
+}
+.dorties1 {
+	float: left;
+	width: 48%;
+	min-height: 180px;
+	max-width: 260px;
+	background-size: 100% auto;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-image:url(http://localhost/MVG_Web/img/dorties1.svg);
+}
+.dorties2 {
+	float: right;
+	width: 46%;
+	padding: 0 0 120px 0;
+	line-height: 25px;
+}
+.dorties3 {
+	clear: both;
+	float: left;
+	width: 48%;
+	height: 60px;
+	max-width: 230px;
+	background-size: 100% auto;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/dorties2.svg);
+}
+.dorties4 {
+	float: right;
+	width: 46%;
+	height: 60px;
+	background-size: 165px auto;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/dorties3.svg);
+}
+.dorties p {
+	padding: 0 0 20px 0;
+}
+
+
+
+
+
+@media screen and (min-width: 0) and (max-width: 1280px) {
+a.scrolldown {
+	display: none;
+}
+}
+
+
+
+@media screen and (min-width: 0) and (max-width: 990px) {
+.txt {
+	padding: 35px 2.5%;
+	width: 90%;
+}
+.logo {
+	width: 150px;
+	margin: 0 0 0 0;
+}
+.dorties {
+	padding: 110px 25px 110px 25px;
+}
+}
+
+
+@media screen and (min-width: 0) and (max-width: 850px) {
+.logo {
+	width: 200px;
+}
+.menu {
+	position: asbolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	display: none;
+	padding: 0 0 20px 0;
+}
+.menu li, .menu li.menuwith {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0 0;
+	background-image: none;
+}
+.menu li a {
+	padding: 10px 0;
+}
+a.menubutt {
+	display: block;
+	float: right;
+	width: 70px;
+	height: 70px;
+	background-size: 35px 35px;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-image: url(http://localhost/MVG_Web/img/menu.png);
+}
+}
+
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+.intro {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.content {
+	padding: 30px 0 0 0;
+}
+.header0 {
+	width: 100%;
+}
+.intro {
+	margin: 91px 0 0 0;
+}
+
+.products1 ul li {
+	float: left;
+	width: 48%;
+	padding: 0 1% 20px 1%;
+}
+a.products23 {
+	display: none;
+}
+.pdetail1, .pdetail2 {
+	float: none;
+	width: auto;
+	padding: 0 0 20px 0;
+}
+.pdetail20 {
+    min-height: 1px;
+}
+
+.bdata {
+	float: none;
+	width: auto;
+	padding: 0 1.5% 50px 1.5%;
+}
+}
+
+
+@media screen and (min-width: 0) and (max-width: 600px) {
+.products1 {
+	float: none;
+	width: auto;
+}
+.products2 {
+	display: none
+}
+.category li {
+	float: left;
+	width: 46%;
+	padding: 0 2% 0 2%;
+}
+.production li {
+	width: 46%;
+	padding: 0 2% 50px 2%;
+}
+.half1, .half2, .half3, .half4 {
+	float: none;
+	width: auto;
+}
+.half1 img, .half3 img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+.intro {
+	padding: 0 0 50px 0;
+	overflow: auto;
+}
+.dorties1, .dorties2, .dorties3, .dorties4 {
+	float: none;
+	width: auto;
+	padding: 0 0 50px 0;
+	background-position: 0 0;
+	height: auto;
+}
+}
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+.products1 ul li {
+	float: none;
+	width: 100%;
+	padding: 0 0 20px 0;
+}
+.pdetail1 {
+	display: none;
+}
+.category li {
+	float: none;
+	width: auto;
+}
+.production li {
+	float: none;
+	width: auto;
+}
+.contact1, .contact2 {
+	float: none;
+	width: 100%;
+	padding: 0 0 30px 0;
+}
+}
