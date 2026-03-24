@@ -1,1 +1,87 @@
+/*
+        This font software is the property of Commercial Type.
 
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2017 Schwartzco Inc.
+        License: 1705-DRMWEP     
+*/
+
+
+@font-face {
+  font-family: 'Lyon Display Web MediumItalic';
+  src: url('LyonDisplay-MediumItalic-Web.eot');
+  src: url('LyonDisplay-MediumItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('LyonDisplay-MediumItalic-Web.woff2') format('woff2'),
+       url('LyonDisplay-MediumItalic-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.LyonDisplay-MediumItalic-Web {
+  font-family: 'Lyon Display Web MediumItalic';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Lyon Display Web';
+  src: url('LyonDisplay-Medium-Web.eot');
+  src: url('LyonDisplay-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('LyonDisplay-Medium-Web.woff2') format('woff2'),
+       url('LyonDisplay-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.LyonDisplay-Medium-Web {
+  font-family: 'Lyon Display Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Lyon Display Web LightItalic';
+  src: url('LyonDisplay-LightItalic-Web.eot');
+  src: url('LyonDisplay-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('LyonDisplay-LightItalic-Web.woff2') format('woff2'),
+       url('LyonDisplay-LightItalic-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.LyonDisplay-LightItalic-Web {
+  font-family: 'Lyon Display Web LightItalic';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Lyon Display Web Light';
+  src: url('LyonDisplay-Light-Web.eot');
+  src: url('LyonDisplay-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('LyonDisplay-Light-Web.woff2') format('woff2'),
+       url('LyonDisplay-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.LyonDisplay-Light-Web {
+  font-family: 'Lyon Display Web Light';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
